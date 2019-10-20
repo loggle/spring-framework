@@ -209,6 +209,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	@Nullable
 	private ApplicationEventMulticaster applicationEventMulticaster;
 
+	//todo 这个字段有什么作用？什么时候使用这个字段
+	//ApplicationListenerDetector.postProcessAfterInitialization 会往里面添加ApplicationListener
 	/** Statically specified listeners. */
 	private final Set<ApplicationListener<?>> applicationListeners = new LinkedHashSet<>();
 
